@@ -19,6 +19,7 @@ import time
 import os
 
 import requests
+import urllib.parse
 
 
 class OnePlusBBSCheckIn:
@@ -114,7 +115,7 @@ class OnePlusBBSCheckIn:
 
             sign_msg = self.sign(cookie=oneplusbbs_cookie)
             draw_msg = self.draw(cookie=oneplusbbs_cookie)
-            msg = f"【一加手机社区官方论坛】\n帐号信息: {bbs_uname}\n签到信息: {sign_msg}\n{draw_msg}"
+            msg = f"【一加手机社区官方论坛】\n帐号信息:  {urllib.parse.unquote(bbs_uname)}\n签到信息: {sign_msg}\n{draw_msg}"
             print(msg)
             msg_list.append(msg)
         return msg_list

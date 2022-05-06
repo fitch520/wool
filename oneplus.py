@@ -5,6 +5,10 @@
 # @File    : oneplus.py
 # @Software: PyCharm
 # oneplus_cookies 环境变量名称多个cookie请用@连接，例：cookie1@cookie2
+# 1、一加论坛web端cookie获取方法
+# 首先使用chrome浏览器，访问一加论坛官网， 登陆账号
+# Windows系统可按 F12 快捷键打开开发者工具, Mac 快捷键 option + command + i
+# 选择开发者工具Network，找到https://www.oneplusbbs.com/plugin.php?id=dsu_paulsign:sign&operation=qiandao&infloat=1&inajax=1, 找到Requests Headers里的Cookie
 
 '''
 cron:  0 5 * * * oneplus.py

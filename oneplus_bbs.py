@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/11/9
 # @Author  : Fitch
-# @File    : oneplus.py
+# @File    : oneplus_bbs.py
 # @Software: PyCharm
 # oneplus_cookies 环境变量名称多个cookie请用@连接，例：cookie1@cookie2
 # 1、一加论坛web端cookie获取方法
@@ -11,7 +11,7 @@
 # 选择开发者工具Network，找到https://www.oneplusbbs.com/plugin.php?id=dsu_paulsign:sign&operation=qiandao&infloat=1&inajax=1, 找到Requests Headers里的Cookie
 
 '''
-cron:  0 5 * * * oneplus.py
+cron:  0 5 * * * oneplus_bbs.py
 new Env('一加论坛web签到抽奖');
 '''
 import re

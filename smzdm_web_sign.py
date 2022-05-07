@@ -5,6 +5,11 @@
 # @Author  : Fitch
 # @File    : smzdm_web_sign.py
 # @Software: PyCharm
+# smzdm_cookies 环境变量名称多个cookie请用@连接，例：cookie1@cookie2
+# 1、什么值得买web端cookie获取方法
+# 首先使用chrome浏览器，访问什么值得买官网， 登陆账号
+# Windows系统可按 F12 快捷键打开开发者工具, Mac 快捷键 option + command + i
+# 选择开发者工具Network，刷新页面 ,选择第一个www.smzdm.com, 找到Requests Headers里的Cookie。
 
 '''
 cron:  0 6 * * * smzdm_web_sign.py
